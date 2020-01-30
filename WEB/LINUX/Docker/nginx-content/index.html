@@ -1,0 +1,27 @@
+     <!DOCTYPE html>
+        <html>
+        
+        <head>
+        <title>Testing Page</title>
+        </head>
+        
+        <body>
+        
+        <h1>Testing nginx Server Core Containers</h1>
+        <p>This page shows that the nginx web server is working from path - /etc/nginx/conf.d/</p>
+        
+        <h2>Which container is this web server living on?</h2>
+        <h4>Run these commands from the Docker host</h4>
+        <p>WEB-nginx-1 - <b>docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" web-nginx-1</b></p>
+        <p>WEB-nginx-2 - <b>docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" web-nginx-2</b></p>
+        
+        
+        
+        
+        <h2>Links</h2>
+        <p>Here is a link to the best website: <a href="https://millenico.co.uk">Millenico</a></p>
+        
+        </body>
+        </html>
+
+
